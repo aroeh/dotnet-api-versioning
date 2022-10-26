@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Api_Versioning.Controllers
+namespace Api_Versioning.Controllers.V1
 {
     [ApiController]
     [ApiVersion("1.0")]

@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Api_Versioning.Controllers
+namespace Api_Versioning.Controllers.V2
 {
     [ApiController]
     [ApiVersion("2.0")]
-    [Route("api/v{version:apiVersion}/values")]
-    public class Values2Controller : ControllerBase
+    [Route("api/v{version:apiVersion}/[controller]")]
+    public class ValuesController : ControllerBase
     {
-        private readonly ILogger<Values2Controller> _logger;
+        private readonly ILogger<ValuesController> _logger;
 
-        public Values2Controller(ILogger<Values2Controller> logger)
+        public ValuesController(ILogger<ValuesController> logger)
         {
             _logger = logger;
         }

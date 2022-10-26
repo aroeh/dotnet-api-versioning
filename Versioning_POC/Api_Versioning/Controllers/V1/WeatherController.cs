@@ -1,21 +1,21 @@
 ﻿using Api_Versioning.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Api_Versioning.Controllers
+namespace Api_Versioning.Controllers.V1
 {
     [ApiController]
     [ApiVersion("1.0")]
-    [Route("api/weather")]
-    public class WeatherV1Controller : ControllerBase
+    [Route("api/[controller]")]
+    public class WeatherController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherV1Controller> _logger;
+        private readonly ILogger<WeatherController> _logger;
 
-        public WeatherV1Controller(ILogger<WeatherV1Controller> logger)
+        public WeatherController(ILogger<WeatherController> logger)
         {
             _logger = logger;
         }
