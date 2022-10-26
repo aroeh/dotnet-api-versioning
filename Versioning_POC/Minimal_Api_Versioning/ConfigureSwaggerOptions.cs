@@ -1,5 +1,6 @@
-﻿namespace Api_Versioning
+﻿namespace Minimal_Api_Versioning
 {
+    using Asp.Versioning.ApiExplorer;
     using Microsoft.AspNetCore.Mvc.ApiExplorer;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Options;
