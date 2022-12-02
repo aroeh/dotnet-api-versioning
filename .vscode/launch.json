@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Versioning_POC/Api_Versioning/bin/Debug/net6.0/Api_Versioning.dll",
+            "program": "${workspaceFolder}/Versioning_POC/Api_Versioning/bin/Debug/net7.0/Api_Versioning.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Versioning_POC/Api_Versioning",
             "stopAtEntry": false,
